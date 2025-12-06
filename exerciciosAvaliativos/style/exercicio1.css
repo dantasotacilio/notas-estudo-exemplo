@@ -1,0 +1,41 @@
+body {
+    background-color: #762cec; /* Cor da pagina*/
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+}
+
+main {
+    margin: 0 auto;
+    margin-top: 8vw;
+    margin-bottom: 8vw;
+    /* posiição vertical horizontal */
+    padding:  120px 16px;
+    width: 380px;
+    background-color: white; 
+    border-radius: 25px;
+    text-align: center;
+}
+
+main h1 {
+    background-color: white;
+    border-radius: 50px;
+    text-align: center;
+
+}
+
+form {
+    text-decoration: none;
+    color: #790b0b;
+    background-color: white;
+    padding:  120px 16px ;
+    border-radius: 25px ;
+    text-align: center;
+    
+}
+button {
+    background-color: #4cf0b9;
+    padding: 10px;
+    color: #4b21e2;
+    font-size: 16px;
+    width: 80%;
+}

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha primeira página HTML</title>
+    <link rel="stylesheet" href="./style/exemplo.css">
+</head>
+<body>
+    <!--A tag header serve para estruturar o cabeçalho da página-->
+    <header>
+        <!--h1 serve para um titulo-->
+        <h1 id="exemploid">Minha página Html Básica !!!</h1>
+        <nav>
+            <a href="./Exercicio02.html">Outra pagina A</a>
+            <br>
+            <br>
+            <a href="./Exercicio02.html">Outra pagina B</a> 
+            
+        </nav>
+    </header>
+
+    <section>
+        <div>
+            <!---h3 serve para estruturação-->
+            <h3>Lista não ordenada</h3>
+            <ul>
+                <li>Batata</li>
+                <li>Tomate</li>
+                <li>Carrinho Hotweels</li>
+                <li>Laranja</li>
+                <li>Banana</li>
+                <li>Coca-Cola</li>
+                <li>Guardanapo</li>
+            </ul>
+        </div>
+        <div>
+            <h3>Lista ordenada</h3>
+            <ol>
+                <li>Paris</li>
+                <li>Roma</li>
+                <li>Turquia</li>
+                <li>Alemanha</li>
+                <li>Irlanda</li>
+                <li>Grecia</li>
+                <li>China</li>
+                
+
+            </ol>
+        </div> 
+    </section>
+
+    <section>
+        <h2>Como incorporar Imagens e Vídeos </h2>
+        <ul>
+            <li>Imagem Bethoven </li>
+        </ul>
+        <img src="https://www.portaldodog.com.br/wp-content/uploads/2017/06/dicas-para-ter-um-bom-passeio-na-praia-com-o-seu-cachorro-pdd1.jpg" alt="Cachorro na Praia">
+   
+        <ul>
+            <li>Canal Youtube Professor Renan </li>
+        </ul>
+        
+
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/JpYVZpuMPYM?si=3g2xXRM6FzEvlPUp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    
+    </section>
+
+    <section>
+        <h2> Formulário Simples </h2>
+        <form action="">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" required>
+
+            <br>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" required> 
+
+            <br>
+
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem">Escreva algo aqui:</textarea>
+
+            <br>
+
+            <label for="idade">Idade:</label>
+            <input type="number" id="Idade" min="10" max="20" required>
+
+            <br>
+
+            <label for="cor">Cor</label>
+            <input type="color" id="Cor" required>
+
+            <br>
+
+            <label for="anexo">Anexo:</label>
+            <input type="file" id="anexo" required>
+
+            <br>
+
+            <button type="submit">Enviar</button>
+            <button type="reset">Limpar</button>
+        </form>
+    </section>
+
+</body>
+</html>

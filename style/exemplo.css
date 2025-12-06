@@ -1,0 +1,83 @@
+body {
+    background-color: #cde9e5; /* Cor da pagina*/
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+}
+
+header {
+    background-color: #b9b9eb; /* Cor do Header*/
+    color: #000;
+    text-align: center;
+    padding: 20px;
+}
+
+header a {
+    text-decoration: none;
+    color: #fff;
+    background-color: #9292b8;
+    padding: 5px 20px;
+    border-radius: 4px ;
+}
+header a:hover {
+    background-color: #3a3a53;
+}
+
+h1 {
+    margin: 0 0 10px 0;
+}
+
+main {
+    padding:  16px;
+}
+
+section {
+    background-color: #FFF;
+    padding: 16px;
+    border-radius: 8px;
+    margin: 10px 0;
+}
+section h3 {
+    border-bottom: 2px solid #9de6dc;
+}
+
+input, textarea, select {
+    width: 99%;
+    padding: 8px;
+    border: 1px solid #CCC;
+    border-radius: 4px;
+}
+
+form button {
+    background-color: #965c41 ;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+form button:hover{
+    background-color: #9b4720;
+}
+
+
+
+/* Para referenciar ID é com # */
+
+h1 {
+    background-color: aqua;
+}
+
+h2 {
+    background-color: rgb(126, 148, 190);
+}
+
+/* Identificaão classe */
+#exemploid {
+    background-color: rgb(150, 186, 228);
+}
+
+/* Para referenciar classe é com . */
+S
+.exemploLocLass{
+
+}
