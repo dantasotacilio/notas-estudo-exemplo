@@ -1,0 +1,50 @@
+<html>
+ 
+<style>
+    .destaque{
+ 
+        background-color: yellow;
+        color: red;
+        font-weight: bold;
+        text-align: center;
+ 
+        }
+</style>
+<body>
+    <h1 id="titulo"> Lista de Numeros</h1>
+    <div><button onclick="numeros()">Listar</button></div>
+    <div></div><button onclick="limpar()">Limpar</button></div>
+    <div></div><button onclick="cor()">Destacar</button></div>
+    <ul id="Lista"></ul>
+</body>
+ 
+<script>
+function numeros(){
+let maximo = Number(prompt("Ate que numero você quer?"));
+let tag = document.getElementById("Lista");
+for (let x = 1; x <= maximo; x++){
+if (isnumeropar(x))
+texto = "par";
+else
+texto = "impar";
+tag.innerHTML += "<li>Número " + x + "("+texto+")</li>";
+}
+function isnumeropar(numero) {
+    return((numero%2)==0);
+}
+}
+function limpar(){
+    let tag = document.getElementById("Lista");
+    tag.innerHTML = "";
+    }
+ 
+ 
+function cor(){
+    let tag = document.getElementById("titulo").classList;
+    tag.toggle("destaque");
+    }
+ 
+ 
+ 
+</script>
+</html>

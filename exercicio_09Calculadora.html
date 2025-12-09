@@ -1,0 +1,61 @@
+<html>
+<body>
+    <h1> Calculadora</h1>
+    <hr>
+    <div>
+        <label> Primeiro Numero:</label>
+        <input type="number" id="n1">
+    </div>    
+    <br>    
+    <div>
+        <label> Segundo Numero:</label>
+        <input type="number" id="n2">
+    </div>
+    <br>
+    <div>
+        <button onclick="somar()">Somar</button>
+        <button onclick="Subtrair()">Subtrair</button>
+        <button onclick="Multiplicar()">Multiplicar</button>
+        <button onclick="dividir()">Dividir</button>
+        </div>    
+ 
+    <hr>
+   
+    <div id ="resultado soma"></div>
+    <div id ="resultado subtracao"></div>
+    <div id ="resultado Multiplicar"></div>
+    <div id ="resultado dividir"></div>
+</body>
+ 
+<script>
+function somar(){
+let num1 = Number(document.getElementById("n1").value);
+let num2 = Number(document.getElementById("n2").value);
+let resultado = document.getElementById("resultado soma");
+resultado.innerText = "Resultado soma: " + (num1 + num2);
+}
+ 
+function Subtrair(){
+let num1 = Number(document.getElementById("n1").value);
+let num2 = Number(document.getElementById("n2").value);
+let resultado = document.getElementById("resultado subtracao");
+resultado.innerText = "Resultado subtracao: " + (num1 - num2);
+}
+ 
+function Multiplicar(){
+let num1 = Number(document.getElementById("n1").value);
+let num2 = Number(document.getElementById("n2").value);
+let resultado = document.getElementById("resultado Multiplicar");
+resultado.innerText = "Resultado Msultiplicar: " + (num1 * num2);
+}
+ 
+function dividir(){
+let num1 = Number(document.getElementById("n1").value);
+let num2 = Number(document.getElementById("n2").value);
+let resultado = document.getElementById("resultado dividir");
+resultado.innerText = "Resultado dividir: " + (num1 / num2);
+}
+ 
+ 
+</script>
+</html>

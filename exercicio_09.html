@@ -1,0 +1,41 @@
+<html>
+<style>
+    .vermelho{ color: red;}
+    .verde{ color: green;}
+    .azul{ color:blue;}
+</style>
+<body>
+<p id="texto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur euismod placerat semper. Quisque dictum pharetra nulla id dictum. Aliquam ullamcorper placerat elit quis vehicula. In id enim mauris. Curabitur eu tortor nunc. Aenean egestas nulla vel elit fringilla sollicitudin. Sed luctus, ligula placerat luctus rhoncus, felis dui faucibus sapien, nec scelerisque elit tortor vel est. Sed auctor ac nisi at laoreet. Phasellus volutpat euismod ultricies. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Proin risus erat, porta eget ipsum eget, interdum ullamcorper magna. In vel rhoncus purus. Duis eget elit nulla. Duis nulla mauris, egestas non lacus vitae, dapibus iaculis felis.</p>
+   <p> Mudar a cor do paragrafo para: </p>
+    <button onclick="mudarparavermelho()">Vermelho</button>
+    <button onclick="mudarparaverde()">Verde</button>
+    <button onclick="mudarparaazul()">Azul</button>
+    </body>
+ 
+<script>
+function mudarparavermelho() {
+    let tag = document.getElementById("texto").classList;
+    limparCores(tag);
+    tag.add("vermelho")
+}
+ 
+function mudarparaverde() {
+    let tag = document.getElementById("texto").classList;
+    limparCores(tag);
+    tag.add("verde")
+}
+ 
+function mudarparaazul() {
+    let tag = document.getElementById("texto").classList;
+    limparCores(tag);
+    tag.add("azul")
+}
+ 
+function limparCores(tag) {
+    tag.remove("vermelho")
+    tag.remove("azul");
+    tag.remove("verde")
+}
+</script>
+</html>
+ 
